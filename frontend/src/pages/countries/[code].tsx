@@ -10,10 +10,18 @@ export default function CountriesBox() {
 
   const { code } = router.query;
 
-  const { data } = useCountryQuery({
+  const { data, loading, error } = useCountryQuery({
     variables: { code: code as string },
     skip: typeof code === "undefined",
   });
+
+  if (loading) {
+    return <div>Chargement...</div>;
+  }
+
+  if (error) {
+    return <div>Erreur: {error.message}</div>;
+  }
 
   const country = data?.country;
   if (!country) {
