@@ -1,3 +1,13 @@
+import Header from "@/components/Header";
+import Form from "@/components/Form";
+import CountriesBox from "@/components/CountriesBox";
+
 export default function Home() {
-  return <h1>Hello, wilder !</h1>;
+  return (
+    <div>
+      <Header />
+      <Form />
+      <CountriesBox />
+    </div>
+  );
 }
