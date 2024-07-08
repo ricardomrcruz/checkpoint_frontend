@@ -26,14 +26,10 @@ export default function CountriesBox() {
       <div className="flex items-center justify-center  bg-[#F2F2F2]">
         <div className="w-full max-w-md p-10 text-center my-10 m-auto">
           <div className="flex flex-col text-left mx-4 bg-white border-gray-100 border-2 p-10 shadow-lg rounded-lg">
-            <span className="text-2xl mb-4 font-emoji">
-              Name: {country.emoji}
-            </span>
-            <h1 className="text-xl font-semibold mb-2">
-              Continent: {country.name}
-            </h1>
+            <span className="text-2xl mb-4 font-emoji">{country.emoji}</span>
+            <h1 className="text-xl font-semibold mb-2">Name: {country.name}</h1>
             <h2 className="text-xl font-semibold mb-2">
-              {country.continent?.name}
+              Continent: {country.continent?.name}
             </h2>
           </div>
         </div>
