@@ -22,7 +22,7 @@ export default function CountriesBox() {
       {countries.map((country) => (
         <div
           key={country.id}
-          className="flex flex-col text-left mx-4 bg-white border-gray-100 border-2 p-10 shadow-lg rounded-lg"
+          className="flex flex-col text-left mnx-4 bg-white border-gray-100 border-2 p-10 shadow-lg rounded-lg"
         >
           <Link href={`/countries/${country.code}`}>
             <span className="text-2xl mb-4 font-emoji">{country.emoji}</span>
