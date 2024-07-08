@@ -26,32 +26,32 @@ async function main() {
   const france = Country.create({
     name: "France",
     code: "FR",
-    emoji: "🇫🇷",
+    emoji: "😀", // Grinning Face
   });
   const china = Country.create({
     name: "China",
     code: "CN",
-    emoji: "🇨🇳",
+    emoji: "🎉", // Party Popper
   });
   const canada = Country.create({
     name: "Canada",
     code: "CA",
-    emoji: "🇨🇦",
+    emoji: "🚀", // Rocket
   });
   const aus = Country.create({
     name: "Australia",
     code: "AU",
-    emoji: "🇦🇺",
+    emoji: "🐱", // Cat Face
   });
   const kenya = Country.create({
     name: "Kenya",
     code: "KE",
-    emoji: "🇰🇪",
+    emoji: "🍕", // Pizza
   });
   const brazil = Country.create({
     name: "Brazil",
     code: "BR",
-    emoji: "🇧🇷",
+    emoji: "⚽", // Soccer Ball
   });
 
   france.continent = europe;

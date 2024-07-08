@@ -1,0 +1,8 @@
+query CountriesSimple {
+  countries {
+    name
+    id
+    emoji
+    code
+  }
+}
